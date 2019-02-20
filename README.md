@@ -1,11 +1,15 @@
 # SplayTree
 
 SplayTree is a Self Adjusting Binary Search Tree (RedBlack Trees, AVL Trees, Scapegoat Trees, 2-3 Trees and so on)
+
 The splay tree was invented by Daniel Sleator and Robert Tarjan in 1985
+
 All normal operations on a binary search tree are combined with one basic operation, called splaying. Splaying the tree for a certain element rearranges the tree so that the element is placed at the root of the tree. One way to do this with the basic search operation is to first perform a standard binary tree search for the element in question, and then use tree rotations in a specific fashion to bring the element to the top. Alternatively, a top-down algorithm can combine the search and the tree reorganization into a single phase.
+
 Good performance for a splay tree depends on the fact that it is self-optimizing, in that frequently accessed nodes will move nearer to the root where they can be accessed more quickly. The worst-case height—though unlikely—is O(n), with the average being O(log n)
-Unlike its "relatives", Splay Trees do not maintaing the extra state
-Since Splay Trees maintain no state, they are also called "Lazy" Trees
+
+Unlike its "relatives", Splay Trees do not maintaing the extra state. Since Splay Trees maintain no state, they are also called "Lazy" Trees
+
 Usage: caching, garbage collection
 
 2 related intuitions:
